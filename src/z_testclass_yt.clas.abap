@@ -1,14 +1,19 @@
-class Z_TESTCLASS_YT definition
-  public
-  final
-  create public .
+CLASS z_testclass_yt DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+    interfaces if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS Z_TESTCLASS_YT IMPLEMENTATION.
+CLASS z_testclass_yt IMPLEMENTATION.
+  METHOD if_oo_adt_classrun~main.
+    out->write( 'Hello this beautiful world!' ).
+  ENDMETHOD.
+
 ENDCLASS.
